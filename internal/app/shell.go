@@ -64,6 +64,17 @@ func WithVersion(version string) func(*Options) {
 	}
 }
 
+func GetPlugins() []string {
+	return maps.Keys(listPlugins())
+}
+
+func GetVersions(p string) []string {
+	if v, ok := listPlugins()[p]; ok {
+		return v
+	}
+	return nil
+}
+
 func selectPlugin(ps []string) string {
 	var p string
 
