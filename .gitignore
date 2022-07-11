@@ -25,5 +25,3 @@
 
 !cmd/*.sh
 !cmd/*.zsh
-
-dist/
