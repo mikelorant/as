@@ -21,3 +21,8 @@
 
 # ...even if they are in subdirectories
 !*/
+
+!cmd/*.sh
+!cmd/*.zsh
+
+dist/
